@@ -1,0 +1,112 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --ver-light-gray: hsl(0, 0%, 95%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container  {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-section {
+    padding: 25px 35px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.sedan-card {
+    background: var(--bright-orange);
+}
+
+.container h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ver-light-gray);
+    margin: 15px 0;
+}
+
+
+.container .btn {
+    border: none;
+    background: var(--ver-light-gray);
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+    margin: 0 0 10px 10px;
+}
+
+.container p {
+    color: var(--ver-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.sedan-btn {
+    color: var(--bright-orange)
+}
+
+.suv-card {
+    background: var(--dark-cyan);
+}
+
+.suv-btn {
+    color: var(--dark-cyan)
+}
+
+.luxury-btn {
+    color: var(--very-dark-cyan)
+}
+
+.luxury-card {
+    background: var(--very-dark-cyan);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        margin: 0 18%;
+    }
+
+    .container p {
+        margin: 30px 0 50px 0;
+    }
+
+    .container .btn {
+        margin: 15px 0;
+    }
+
+    .container .luxury-btn-container, .sedan-btn-container, .suv-btn-container {
+
+    }
+}
+
+
+
+
+.attribution {position: relative; font-size: 11px; text-align: center; bottom: -60px;}
+.attribution a { color: hsl(228, 45%, 44%); }
